@@ -13,6 +13,8 @@ import org.gradle.api.Project
 private const val GAV_SWITCH_ENABLED = "gavToModule.enable"
 private const val GAV_SWITCH_SKIPS = "gavToModule.skips"
 
+const val ANDROID_APP_PLUGIN = "com.android.application"
+
 fun Project.isEnabled(): Boolean {
     try {
         if (this.rootProject.hasProperty(GAV_SWITCH_ENABLED)) {
