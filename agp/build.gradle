@@ -1,0 +1,21 @@
+plugins {
+    id 'groovy'
+    id 'kotlin'
+    id 'java-gradle-plugin'
+}
+
+def agp_version = '7.0.4'
+
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation "com.android.tools.build:gradle-api:$agp_version"
+    implementation "com.android.tools.build:gradle:$agp_version"
+    implementation 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
+
+}
+
+//repositories {
+//    mavenCentral()
+//}
